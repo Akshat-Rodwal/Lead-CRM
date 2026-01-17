@@ -6,9 +6,9 @@ const app = require("../src/serverlessApp");
 let dbReady = false;
 
 module.exports = async (req, res) => {
-  if (!dbReady) {
-    await connectDB();
-    dbReady = true;
-  }
-  return app(req, res);
+    if (!dbReady) {
+        await connectDB();
+        dbReady = true;
+    }
+    return app(req, res);
 };

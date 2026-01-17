@@ -17,12 +17,12 @@ const StatusBadge = ({ status }) => {
                     status === "New"
                         ? "bg-blue-600 animate-pulse-soft"
                         : status === "Converted"
-                        ? "bg-emerald-600"
-                        : status === "Contacted"
-                        ? "bg-yellow-600"
-                        : status === "Lost"
-                        ? "bg-red-600"
-                        : "bg-gray-500"
+                          ? "bg-emerald-600"
+                          : status === "Contacted"
+                            ? "bg-yellow-600"
+                            : status === "Lost"
+                              ? "bg-red-600"
+                              : "bg-gray-500"
                 }`}
             />
             <span>{status}</span>

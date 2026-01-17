@@ -60,7 +60,7 @@ const LeadTable = ({ leads }) => {
                                 </td>
                                 <td className="px-4 py-3 text-right text-xs text-gray-500">
                                     {new Date(
-                                        lead.createdAt
+                                        lead.createdAt,
                                     ).toLocaleDateString()}
                                 </td>
                                 <td className="px-2 py-3 text-right">
